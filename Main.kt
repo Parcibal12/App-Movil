@@ -15,6 +15,6 @@ fun main() {
     val edadEsPar: Boolean = (edad % 2 == 0)
     val genero = "Masculino"
 
-    saludar(nombre = nombreCompleto)
-    mostrarGenero(genero = genero)
+    saludar(nombre = nombreCompleto)  // Resultado en consola: "Hola, mi nombre es Daniel Irigoyen Miranda"
+    mostrarGenero(genero = genero)  // Resultado en consola: "mi género es.... Masculino"
 }
