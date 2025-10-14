@@ -17,8 +17,15 @@
  * - Salida esperada (después de la corrección):
  * "Dominio: No especificado"
  */
-// Solución del examen (con error)
+/*Solución del examen (con error)
 
 var email: String? = null
 val dominio = email.substringAfter("@")
 println("Dominio: $dominio")
+*/
+
+//Solución corregida
+
+val email: String? = null
+val dominio = email?.substringAfter("@") ?: "no definido"
+println("Dominio: $dominio") 
