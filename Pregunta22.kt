@@ -14,3 +14,5 @@ Restricciones: Sin usar conversiones de tipo
     Entrada: 1234
     Salida: No es un número espejo
 */
+
+//No puse ninguna solución en el examen
