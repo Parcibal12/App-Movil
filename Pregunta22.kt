@@ -15,4 +15,28 @@ Restricciones: Sin usar conversiones de tipo
     Salida: No es un número espejo
 */
 
-//No puse ninguna solución en el examen
+//Solución:
+fun esNumeroEspejo(numero: Int): Boolean {
+    var original = numero
+    var invertido = 0
+
+    while (original != 0) {
+        val digito = original % 10
+        invertido = invertido * 10 + digito
+        original /= 10
+    }
+
+    return numero == invertido
+}
+
+fun main() {
+    val numeros = listOf(1221, 1234, 121, 909, 1331)
+    for (num in numeros) {
+        if (esNumeroEspejo(num)) {
+            println("$num: Es un número espejo")
+        } else {
+            println("$num: No es un número espejo")
+        }
+    }
+}
+
