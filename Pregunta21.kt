@@ -31,3 +31,5 @@ val result = classifyIntegers(items)
 println(result) // Salida: []
 
 */
+
+//No hice nada del ejercicio en el examen
