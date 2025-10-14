@@ -6,8 +6,7 @@
  * val dominio = email.substringAfter("@")
  * println("Dominio: $dominio")
  *
- * EJEMPLOS DE ENTRADA Y SALIDA
- *
+ * EJEMPLOS DE ENTRADA Y SALIDA:
  *
  * CASO 1: Entrada con un email válido
  * - Entrada: val email: String? = "estudiante@universidad.com"
@@ -17,9 +16,4 @@
  * - Entrada: val email: String? = null
  * - Salida esperada (después de la corrección):
  * "Dominio: No especificado"
- *
  */
-// Solución del examen (con error)
-var email: String? = null
-var dominio = email.substringAfter("@")
-println("Dominio: $dominio")
