@@ -32,4 +32,18 @@ println(result) // Salida: []
 
 */
 
-//No hice nada del ejercicio en el examen
+//Solución:
+
+fun classifyIntegers(items: List<Any>): List<Int> {
+    return items.filterIsInstance<Int>()
+}
+
+fun main() {
+    val items1: List<Any> = listOf(1, 2, 3, "pc", true, 1.2, 0)
+    val result1 = classifyIntegers(items1)
+    println(result1) 
+
+    val items2: List<Any> = listOf("itemA", "itemB", true, false)
+    val result2 = classifyIntegers(items2)
+    println(result2) 
+}
