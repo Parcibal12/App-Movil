@@ -55,3 +55,40 @@ fun MiEjemploDeColumn() {
 fun PreviewColumn() {
     MiEjemploDeColumn()
 }
+
+
+//Ejemplo 2: Box
+@Composable
+fun MiEjemploDeBox() {
+    Box(
+        modifier = Modifier
+            .size(300.dp)
+            .background(Color.LightGray)
+    ){
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Blue)
+        )
+
+        Text(
+            text = "hola",
+            color = Color.White,
+            modifier = Modifier.align(Alignment.Center)
+        )
+
+        Text(
+            text = "esquina",
+            color = Color.Yellow,
+            modifier = Modifier
+                .align(Alignment.BottomEnd)
+                .padding(8.dp)
+        )
+    }
+}
+
+@Preview(showBackground = true, name = "2. Box")
+@Composable
+fun PreviewBox() {
+    MiEjemploDeBox()
+}
