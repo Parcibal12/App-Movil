@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">layouts2</string>
+    <string name="boton_ejemplo">Presióname (desde resources)</string>
 </resources>
