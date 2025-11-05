@@ -66,3 +66,42 @@ fun TabbedViewPreview() {
 }
 
 
+//Componente 2
+@Composable
+fun StreakIndicator(
+    progress: Float,
+    days: Int,
+    modifier: Modifier = Modifier
+) {
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = modifier.size(100.dp)
+    ) {
+        CircularProgressIndicator(
+            progress = { progress },
+            modifier = Modifier.fillMaxSize(),
+            strokeWidth = 8.dp
+        )
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(
+                text = "$days",
+                style = MaterialTheme.typography.headlineSmall,
+                fontWeight = MaterialTheme.typography.headlineSmall.fontWeight
+            )
+            Text(
+                text = "días",
+                style = MaterialTheme.typography.bodySmall
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true, name = "Componente 2: Racha")
+@Composable
+fun StreakIndicatorPreview() {
+    Layouts2Theme {
+        StreakIndicator(progress = 0.7f, days = 7)
+    }
+}
+
+
